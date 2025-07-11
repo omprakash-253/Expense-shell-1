@@ -39,7 +39,7 @@ VALIDATE $? "unzip backend.zip file located on /tmp to /app directory"
 npm install &>>$logfile
 VALIDATE $? "installation of nodejs dependencies"
 
-cp /home/ec2-user/expense-documentation/backend.service /etc/systemd/system/backend.service &>>$logfile
+cp /home/ec2-user/Expense-shell-1/backend.service /etc/systemd/system/backend.service &>>$logfile
 VALIDATE $? "copied backend services"
 
 systemctl daemon-reload &>>$logfile
