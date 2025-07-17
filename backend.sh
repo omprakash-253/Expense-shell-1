@@ -16,7 +16,7 @@ VALIDATE $? "enablish nodejs:20 version"
 dnf install nodejs -y &>>$logfile
 VALIDATE $? "installing nodejs"
 
-id expnese &>>$logfile
+id expense &>>$logfile
 if [ $? -ne 0 ]
 then
     useradd expense &>>$logfile
